@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binge Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <img src="images/Screenshot_2023-11-25_231254-removebg-preview.png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#movie">Movies</a></li>
+                <li><a href="#Experience">Genre</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>Unleash Infinite Entertainment:<br>Your Gateway to Cinematic Bliss</h1>
+            <div>
+                
+                <a href="#movie" class="watch-now-btn">Watch Now</a>
+            </div>
+           
+        </div>
+
+        <video autoplay loop muted playsinline class="back-video">
+            <source src="images/ANIMAL (TELUGU OFFICIAL TRAILER) Ranbir Kapoor, Rashmika, Anil K, Bobby D _Sandeep Vanga _ Bhushan K (2) (1).mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+
+    
+        
+        <div class="row" id="About">
+            <div class="col-image">
+                <h2>Genre Diversity:</h2> <br><p>The webpage presents a diverse range of movies across genres, from Telugu films to web series, catering to varied audience preferences.</p>
+    
+    
+            </div>
+            <div class="col-image">
+                <h2>Legal Streaming Links:</h2> <br><p>Each movie entry provides official links to authorized streaming platforms, promoting ethical viewing practices and supporting content creators.</p>
+                </div>
+    
+    
+                <div class="col-image">
+                    <h2>Anti-Piracy Advocacy:</h2><br><p>The inclusion of a strong anti-piracy message reinforces the importance of legal and responsible movie consumption, enhancing awareness among users.</p>
+                    </div>
+
+    
+    
+                    <div class="col-image">
+                        <h2>User-Friendly Experience:</h2><br><p>The design prioritizes a user-friendly experience, featuring dynamic search functionality for easy navigation and detailed information retrieval.
+
+
+
+                        </p>
+                        </div>
+
+                    <div class="col-image">
+                            <h2>Interactive Movie Tiles: </h2><br><p>Movie tiles are interactive, allowing users to click on images for a quick and direct redirection to official streaming platforms, enhancing user engagement.</p>
+                            </div>
+            
+            
+                            <div class="col-image">
+                                <h2>Unique Vintage Collection:</h2><br><p>The webpage stands out by featuring a distinctive collection of vintage movies, complemented by compelling content, offering users a unique and nostalgic viewing experience.</p>
+                                </div>
+            
+                                <input type="text" id="searchInput" placeholder="Search your film....">
+                                <div id="searchResults"></div>
+                            
+                
+            </div>
+    </div>
+    
+
+    <div class="telugu" id="movie">
+        
+        <h1>Telugu Movies</h1>
+       
+            <div class="img1" >
+                <a href="https://www.hotstar.com/in/movies/skanda-the-attacker/1260155971"><img src="images/skandha.jpg" onclick="toggleDescription('description1', this)"></a>
+                <div class="overlay">
+                    <div class="container">
+                        
+                    </div>
+                </div>
+                <h5>Skandha</h5>
+               
+            </div>
+    
+            <div class="img3">
+               <a href="https://www.amazon.com/Bhagavanth-Kesari-I-Dont-Care/dp/B0CG9DW2FP"><img src="images/bk.jpg" onclick="toggleDescription('description2', this)"></a>
+               <h5>Bhagavanth Kesari</h5>
+               
+            </div>
+
+            <div class="img3" id="movie">
+                <a href="https://www.primevideo.com/detail/Tiger-Nageswara-Rao/0N0MNGB1VQAPW90QUPP7F6VRJV"><img src="images/tiger.jpg" onclick="toggleDescription('description2', this)"></a>
+                <h5>Tiger Nageshwarao</h5>
+                
+             </div>
+
+             <div class="img3">
+                <a href="https://www.amazon.com/Pushpa-Rise-Telugu-Allu-Arjun/dp/B09PKVP281"><img src="images/pushpa.jpg" onclick="toggleDescription('description2', this)"></a>
+                <h5>Pushpa</h5>
+                
+             </div>
+             <div class="img3">
+                <a href="https://www.hotstar.com/in/movies/rrr/1260108122"><img src="images/rrr.jpg" onclick="toggleDescription('description2', this)"></a>
+                <h5>RRR</h5>
+                
+             </div>
+    
+            <div class="img1">
+                <a href="https://www.primevideo.com/detail/KGF-Chapter-2-Telugu/0U57AXLPYCP2QBJ4P10GD4LYST"><img src="images/kgf.jpg"  onclick="toggleDescription('description3', this)"></a>
+                <h5>KGF chapter-2</h5>
+                <p id="description3" class="description"></p>
+            </div>
+    
+            
+            <div class="img2">
+                <a href="https://www.netflix.com/in/title/81678103"><img src="images/Mad_(film).jpg"></a>
+                <h5>Mad</h5>
+                <p id="description4" class="description"></p>
+            </div>
+    
+
+            <div class="img2">
+                <a href="https://www.netflix.com/in/title/81719490"><img src="images/kushi.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>Kushi</h5>
+                <p id="description4" class="description"></p>
+            </div>
+
+            <div class="img2">
+                <a href="https://www.primevideo.com/detail/Ee-Nagaraniki-Emaindi/0HG5FNGB0BB7GKYQPRDWO9WDJX"><img src="images/ENE.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>Ee Nagaraniki M ayyindi</h5>
+                <p id="description4" class="description"></p>
+            </div>
+
+            <div class="img2">
+                <a href="https://www.netflix.com/in/title/81252029"><img src="images/ala.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>Ala Vaikuntapuramlo</h5>
+                <p id="description4" class="description"></p>
+            </div>
+
+            <div class="img2">
+                <a href="https://web.prod.ftl.netflix.com/in/title/81382265"><img src="images/MS shetty.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>Ms.Shetty Mr.Pollishetty</h5>
+                <p id="description4" class="description"></p>
+            </div>
+
+            <div class="img2">
+                <a href="https://www.hotstar.com/in/movies/akhanda/1260079644"><img src="images/Akkhanda.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>Akhanda</h5>
+                <p id="description4" class="description"></p>
+            </div>
+           
+    
+            
+           
+    
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="telugu" id="movie">
+        <h1>Adds on Movies</h1>
+       
+            <div class="img1">
+                <a href="https://www.sunnxt.com/telugu-movie-arya-2-2009/detail/9999"><img src="images/Arya-2.jpeg" onclick="toggleDescription('description1', this)"></a>
+                <div class="overlay">
+                    <div class="container">
+                        
+                    </div>
+                </div>
+                <h5>Arya 2</h5>
+               
+            </div>
+    
+            <div class="img3">
+               <a href="https://www.sunnxt.com/telugu-movie-billa-2009/detail/9099"><img src="images/Billa.jpg" onclick="toggleDescription('description2', this)"></a>
+               <h5>Billa</h5>
+               
+            </div>
+
+            <div class="img3">
+                <a href="https://www.hotstar.com/in/movies/premisthe/1000057155"><img src="images/premisthe.jpg" onclick="toggleDescription('description2', this)"></a>
+                <h5>premisthe</h5>
+                
+             </div>
+
+             <div class="img3">
+                <a href="https://www.youtube.com/watch?v=Mj5xg4fPZhU"><img src="images/nnn.jpg" onclick="toggleDescription('description2', this)"></a>
+                <h5>Nuvvu Naaku Nachav</h5>
+                
+             </div>
+             <div class="img3">
+                <img src="images/KushiPavan.jpg" onclick="toggleDescription('description2', this)">
+                <h5>Kushi</h5>
+                
+             </div>
+    
+            <div class="img1">
+                <a href="https://www.youtube.com/watch?v=e5SmOgO-Z1M"><img src="images/Jayam.jpg"  onclick="toggleDescription('description3', this)"></a>
+                <h5>Jayam</h5>
+                <p id="description3" class="description"></p>
+            </div>
+    
+            
+            <div class="img2">
+                <a href="https://www.youtube.com/watch?v=mmMpF4IGFk8"><img src="images/brindhavan.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>7g brindhavan colony</h5>
+                <p id="description4" class="description"></p>
+            </div>
+    
+
+            <div class="img2">
+                <a href="https://www.youtube.com/watch?v=Z5lGjY0Xo9g"><img src="images/malliswari.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>Malleshwari</h5>
+                <p id="description4" class="description"></p>
+            </div>
+
+            
+            
+    </div>
+    
+
+
+
+    <div class="telugu" id="movie">
+        <h1>Web Series</h1>
+       
+            <div class="img1">
+                <a href="https://www.netflix.com/in/title/80192098"><img src="images/MOneyHeist.jpg" onclick="toggleDescription('description1', this)"></a>
+                <div class="overlay">
+                    <div class="container">
+                   
+                    </div>
+                </div>
+                <h5>Money Heist</h5>
+               
+            </div>
+    
+            <div class="img3">
+               <img src="images/FamilyMan.jpg" onclick="toggleDescription('description2', this)">
+               <h5>The Family Man</h5>
+               
+            </div>
+
+            <div class="img3">
+                <a href="https://www.amazon.com/Mirzapur-Season-2/dp/B08LH9WPDQ"><img src="images/Mirzapur.jpg" onclick="toggleDescription('description2', this)"></a>
+                <h5>Mirzapur</h5>
+                
+             </div>
+
+             <div class="img3">
+                <a href="https://www.netflix.com/in/title/81076756"><img src="images/Delhi Crime.jpg" onclick="toggleDescription('description2', this)"></a>
+                <h5>Delhi Crime</h5>
+                
+             </div>
+             <div class="img3">
+                <a href="https://www.netflix.com/in/title/81313283"><img src="images/Rana Naidu.jpg" onclick="toggleDescription('description2', this)"></a>
+                <h5>Rana Naidu</h5>
+                
+             </div>
+    
+            <div class="img1">
+                <a href="https://www.netflix.com/in/title/80002479"><img src="images/peaky Blinders.jpg"  onclick="toggleDescription('description3', this)"></a>
+                <h5>Peaky Blinders</h5>
+                <p id="description3" class="description"></p>
+            </div>
+    
+            
+            <div class="img2">
+                <a href="https://www.primevideo.com/detail/Farzi/0HDHQAUF5LPWOJRCO025LFJSJI"><img src="images/Farzi.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>Farzi</h5>
+                <p id="description4" class="description"></p>
+            </div>
+    
+
+            <div class="img2">
+                <a href="https://www.netflix.com/in/title/81040344"><img src="images/squidGame.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>Squid Game</h5>
+                <p id="description4" class="description"></p>
+            </div>
+
+            <div class="img2">
+                <a href="https://www.sonyliv.com/shows/scam-1992-the-harshad-mehta-story-1700000292"><img src="images/Scam1992.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>Scam 1992</h5>
+                <p id="description4" class="description"></p>
+            </div>
+
+            <div class="img2">
+                <a href="https://www.jiocinema.com/tv-shows/game-of-thrones/3739477"><img src="images/GOT.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>Game Of Thrones</h5>
+                <p id="description4" class="description"></p>
+            </div>
+
+            <div class="img2">
+                <a href="https://www.netflix.com/in/title/70143836"><img src="images/Breaking Bad.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>Breaking Bad</h5>
+                <p id="description4" class="description"></p>
+            </div>
+
+            <div class="img2">
+                <a href="https://www.netflix.com/in/title/80100172"><img src="images/DARK.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>Dark</h5>
+                <p id="description4" class="description"></p>
+            </div>
+           
+    </div>
+
+
+
+
+    <div class="telugu" >
+        <h1>Notable Films</h1>
+       
+            <div class="img1">
+                <a href="https://www.primevideo.com/detail/AK-Ayyappanum-Koshiyum/0SCAFGQ42H9UGS1RSKJ78U27JE"><img src="images/Ak.jpg" onclick="toggleDescription('description1', this)"></a>
+                <div class="overlay">
+                    <div class="container">
+                        
+                    </div>
+                </div>
+                <h5>Ayyappanum Koshiyum</h5>
+               
+            </div>
+    
+            <div class="img3">
+               <img src="images/Good Night.jpg" onclick="toggleDescription('description2', this)">
+               <h5>Good Night</h5>
+               
+            </div>
+
+            <div class="img3">
+                <a href="https://www.zee5.com/movies/details/garuda-gamana-vrishabha-vahana/0-0-1z571846"><img src="images/GGV.jpg" onclick="toggleDescription('description2', this)"></a>
+                <h5>Garuda Gamana Vrishabha Vahana </h5>
+                
+             </div>
+
+             <div class="img3">
+                <a href="https://www.netflix.com/in/title/81722145"><img src="images/OMG2.jpg" onclick="toggleDescription('description2', this)"></a>
+                <h5>OMG2</h5>
+                
+             </div>
+             <div class="img3">
+                <a href="https://www.netflix.com/in/title/81128584"><img src="images/Super Deluxe.jpg" onclick="toggleDescription('description2', this)"></a>
+                <h5>Super Deluxe</h5>
+                
+             </div>
+    
+            <div class="img1">
+                <a href="https://www.netflix.com/in/title/81341216"><img src="images/sin stories.jpg"  onclick="toggleDescription('description3', this)"></a>
+                <h5>Paava kadhaigal</h5>
+                <p id="description3" class="description"></p>
+            </div>
+    
+            
+            <div class="img2">
+                <a href="https://www.amazon.com/96-Vijay-Sethupathi/dp/B09L3LQ6QP"><img src="images/96.JPG" onclick="toggleDescription('description4', this)"></a>
+                <h5>96</h5>
+                <p id="description4" class="description"></p>
+            </div>
+    
+
+            <div class="img2">
+                <a href="https://www.netflix.com/in/title/81256436"><img src="images/uma.jpg" onclick="toggleDescription('description4', this)"></a>
+                <h5>Uma Maheshwara Ugra Roopasya</h5>
+                <p id="description4" class="description"></p>
+            </div>
+
+            
+
+
+    
+
+
+            <script>
+                // Sample product data
+                
+    // Sample product data
+    var products = [
+        { name: 'Skandha', category: 'Telugu Movies', image: 'images/skandha.jpg', link: 'https://www.hotstar.com/in/movies/skanda-the-attacker/1260155971'},
+        { name: 'Bhagavanth Kesari', category: 'Telugu Movies', image: 'images/bk.jpg', link: 'https://www.amazon.com/Bhagavanth-Kesari-I-Dont-Care/dp/B0CG9DW2FP' },
+        { name: 'Tiger Nageshwarao', category: 'Telugu Movies', image: 'images/tiger.jpg', link: 'https://www.primevideo.com/detail/Tiger-Nageswara-Rao/0N0MNGB1VQAPW90QUPP7F6VRJV' },
+        { name: 'Pushpa', category: 'Telugu Movies', image: 'images/pushpa.jpg', link: 'https://www.amazon.com/Pushpa-Rise-Telugu-Allu-Arjun/dp/B09PKVP281' },
+        { name: 'RRR', category: 'Telugu Movies', image: 'images/rrr.jpg', link: 'https://www.hotstar.com/in/movies/rrr/1260108122' },
+        { name: 'KGF chapter-2', category: 'Telugu Movies', image: 'images/kgf.jpg', link: 'https://www.primevideo.com/detail/KGF-Chapter-2-Telugu/0U57AXLPYCP2QBJ4P10GD4LYST' },
+        { name: 'Mad', category: 'Telugu Movies', image: 'images/Mad_(film).jpg', link: 'https://www.netflix.com/in/title/81678103' },
+        { name: 'Kushi', category: 'Telugu Movies', image: 'images/kushi.jpg', link: 'https://www.netflix.com/in/title/81719490' },
+        { name: 'Ee Nagaraniki Mayyindi', category: 'Telugu Movies', image: 'images/ENE.jpg', link: 'https://www.primevideo.com/detail/Ee-Nagaraniki-Emaindi/0HG5FNGB0BB7GKYQPRDWO9WDJX' },
+        { name: 'Ala Vaikuntapuramlo', category: 'Telugu Movies', image: 'images/ala.jpg', link: 'https://www.netflix.com/in/title/81252029' },
+        { name: 'Ms.Shetty Mr.Pollishetty', category: 'Telugu Movies', image: 'images/MS shetty.jpg', link: 'https://web.prod.ftl.netflix.com/in/title/81382265' },
+        { name: 'Akhanda', category: 'Telugu Movies', image: 'images/Akhanda.jpg', link: 'https://www.hotstar.com/in/movies/akhanda/1260079644' },
+        // Add more Telugu Movies as needed
+
+        // Additional Movies with links to OTT platforms
+        { name: 'Arya 2', category: 'Other Movies', image: 'images/Arya-2.jpeg', link: 'https://www.sunnxt.com/telugu-movie-arya-2-2009/detail/9999' },
+        { name: 'Billa', category: 'Other Movies', image: 'images/Billa.jpg', link: 'https://www.sunnxt.com/telugu-movie-billa-2009/detail/9099' },
+        { name: 'premisthe', category: 'Other Movies', image: 'images/premisthe.jpg', link: 'https://www.hotstar.com/in/movies/premisthe/1000057155' },
+        { name: 'Nuvvu Naaku Nachav', category: 'Other Movies', image: 'images/nnn.jpg', link: 'https://www.youtube.com/watch?v=Mj5xg4fPZhU' },
+        { name: 'Kushi', category: 'Other Movies', image: 'images/KushiPavan.jpg', link: '#' }, // No link provided
+        { name: 'Jayam', category: 'Other Movies', image: 'images/Jayam.jpg', link: 'https://www.youtube.com/watch?v=e5SmOgO-Z1M' },
+        { name: '7g brindhavan colony', category: 'Other Movies', image: 'images/brindhavan.jpg', link: 'https://www.youtube.com/watch?v=mmMpF4IGFk8' },
+        { name: 'Malleshwari', category: 'Other Movies', image: 'images/malliswari.jpg', link: 'https://www.youtube.com/watch?v=Z5lGjY0Xo9g' },
+        // Add more Other Movies as needed
+
+        // Web Series with links to OTT platforms
+        { name: 'Money Heist', category: 'Web Series', image: 'images/MOneyHeist.jpg', link: 'https://www.netflix.com/in/title/80192098' },
+        { name: 'The Family Man', category: 'Web Series', image: 'images/FamilyMan.jpg', link: '#' }, // No link provided
+        { name: 'Mirzapur', category: 'Web Series', image: 'images/Mirzapur.jpg', link: 'https://www.amazon.com/Mirzapur-Season-2/dp/B08LH9WPDQ' },
+        { name: 'Delhi Crime', category: 'Web Series', image: 'images/Delhi Crime.jpg', link: 'https://www.netflix.com/in/title/81076756' },
+        { name: 'Rana Naidu', category: 'Web Series', image: 'images/Rana Naidu.jpg', link: 'https://www.netflix.com/in/title/81313283' },
+        { name: 'Peaky Blinders', category: 'Web Series', image: 'images/peaky Blinders.jpg', link: 'https://www.netflix.com/in/title/80002479' },
+        { name: 'Farzi', category: 'Web Series', image: 'images/Farzi.jpg', link: 'https://www.primevideo.com/detail/Farzi/0HDHQAUF5LPWOJRCO025LFJSJI' },
+        { name: 'Squid Game', category: 'Web Series', image: 'images/squidGame.jpg', link: 'https://www.netflix.com/in/title/81040344' },
+        { name: 'Scam 1992', category: 'Web Series', image: 'images/Scam1992.jpg', link: 'https://www.sonyliv.com/shows/scam-1992-the-harshad-mehta-story-1700000292' },
+        { name: 'Game Of Thrones', category: 'Web Series', image: 'images/GOT.jpg', link: 'https://www.jiocinema.com/tv-shows/game-of-thrones/3739477' },
+        { name: 'Breaking Bad', category: 'Web Series', image: 'images/Breaking Bad.jpg', link: 'https://www.netflix.com/in/title/70143836' },
+        { name: 'Dark', category: 'Web Series', image: 'images/DARK.jpg', link: 'https://www.netflix.com/in/title/80100172' },
+        // Add more Web Series as needed
+
+        // Notable Films with links to OTT platforms
+        { name: 'Ayyappanum Koshiyum', category: 'Notable Films', image: 'images/Ak.jpg', link: 'https://www.primevideo.com/detail/AK-Ayyappanum-Koshiyum/0SCAFGQ42H9UGS1RSKJ78U27JE' },
+        { name: 'Good Night', category: 'Notable Films', image: 'images/Good Night.jpg', link: '#' }, // No link provided
+        { name: 'Garuda Gamana Vrishabha Vahana', category: 'Notable Films', image: 'images/GGV.jpg', link: 'https://www.zee5.com/movies/details/garuda-gamana-vrishabha-vahana/0-0-1z571846' },
+        { name: 'OMG2', category: 'Notable Films', image: 'images/OMG2.jpg', link: 'https://www.netflix.com/in/title/81722145' },
+        { name: 'Super Deluxe', category: 'Notable Films', image: 'images/Super Deluxe.jpg', link: 'https://www.netflix.com/in/title/81128584' },
+        { name: 'Paava kadhaigal', category: 'Notable Films', image: 'images/sin stories.jpg', link: 'https://www.netflix.com/in/title/81341216' },
+        { name: '96', category: 'Notable Films', image: 'images/96.JPG', link: 'https://www.amazon.com/96-Vijay-Sethupathi/dp/B09L3LQ6QP' },
+        { name: 'Uma Maheshwara Ugra Roopasya', category: 'Notable Films', image: 'images/uma.jpg', link: 'https://www.netflix.com/in/title/81256436' },
+        // Add more Notable Films as needed
+    ];
+
+            </script>
+            
+            <script>
+             document.getElementById('searchInput').addEventListener('input', function () {
+            // Get the search query
+            var searchQuery = this.value.trim().toLowerCase();
+
+            // Filter and display matching result
+            var resultsContainer = document.getElementById('searchResults');
+            var teluguContainers = document.getElementsByClassName('telugu');
+            // Clear previous results and hide existing containers
+            resultsContainer.innerHTML = '';
+            for (var i = 0; i < teluguContainers.length; i++) {
+             teluguContainers[i].style.display = 'none';
+                }
+
+            // Check if the search query is empty
+            if (searchQuery === '') {
+                // Show the existing images container
+                teluguContainer.style.display = 'grid'; // or 'block'
+                return;
+            } else {
+                // Show the search results container
+                resultsContainer.style.display = 'block';
+            }
+
+
+            for (var i = 0; i < products.length; i++) {
+            var product = products[i];
+            var containerId = product.name.toLowerCase().replace(/ /g, ''); // Assuming container IDs are based on product names
+
+            if (product.category !== 'Telugu Movies') {
+            var container = document.getElementById(containerId);
+            if (container) {
+            container.style.display = 'none';
+            }
+            }
+            }
+            
+            // Loop through products and display matching ones
+            // Inside the input event listener
+// Replace the existing code with the following
+
+// Loop through products and display matching ones
+for (var i = 0; i < products.length; i++) {
+    var productName = products[i].name.toLowerCase();
+    var productCategory = products[i].category.toLowerCase();
+
+    // Check if the search query is present in the product name or category
+    if (productName.includes(searchQuery) || productCategory.includes(searchQuery)) {
+        var resultItem = document.createElement('div');
+        resultItem.className = 'product';
+
+        // Add anchor element for hyperlink
+        var anchorElement = document.createElement('a');
+        anchorElement.href = products[i].link; // Use individual link for each product
+        resultItem.appendChild(anchorElement);
+
+        // Add image to the anchor element
+        var imgElement = document.createElement('img');
+        imgElement.src = products[i].image;
+        imgElement.alt = products[i].name;
+
+        // Append the image to the anchor element
+        anchorElement.appendChild(imgElement);
+
+        // Add details (name, category, price) to the result item
+        var detailsElement = document.createElement('div');
+        detailsElement.innerHTML = `
+            <h3>${products[i].name}</h3>
+            <p>Category: ${products[i].category}</p>
+        `;
+
+        // Append the details to the result item
+        resultItem.appendChild(detailsElement);
+
+        // Add result item to the results container
+        resultsContainer.appendChild(resultItem);
+    }
+}
+             })
+
+
+            </script>
+
+
+
+
+
+</body>
+</html>

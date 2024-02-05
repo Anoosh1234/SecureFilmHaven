@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(black,rgb(255, 0, 0));
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(22, 2, 2), rgba(0, 0, 0, 0.3));
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    width: 150px;
+    cursor: pointer;
+    background:transparent;
+    border-radius: 65px;
+}
+
+nav .logo:hover {
+    background: transparent;
+    border-radius: 70%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+nav ul li {
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 17px;
+    position: relative;
+    transition: border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 2.8px solid #ff00006a;
+}
+
+.content {
+    text-align: center;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 40px;
+    color: #e6e6e6;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+.content h2 {
+    font-size: 36px;
+    color: #e6e6e6;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.content h1:hover {
+    -webkit-text-stroke: px #ffffff;
+    color: transparent;
+    
+}
+
+.about{
+    height: 100vh;
+    
+    padding: 200px;
+    
+
+}
+
+.about span{
+    font-size: 30px;
+    color: rgb(145, 111, 111);
+    padding-left: 150px;
+}
+
+.about h3{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.telugu h5{
+    font-size: 15px;
+    color: yellow;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: 0.3s, color 0.3s;
+}
+
+.content a:hover {
+    background: #fff;
+    color: black;
+}
+
+.home-image-container {
+    margin-top: 20px;
+}
+
+.home-image-container img {
+    width: 350px;
+    height: 350px;
+    box-shadow: 5px 5px 10px rgb(68, 68, 68);
+    border-color: yellow;
+    border-radius: 15px;
+    opacity: 2;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: center;
+    width: 100%;
+    opacity: 0.8;
+    transition: ease-in;
+}
+
+
+.telugu{
+    
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:2rem;
+    text-align: center;
+    align-items: center;
+   
+}
+
+
+.container{
+    width: 50%;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 10px 20px rgb(40,40,40);
+}
+.telugu h1 {
+    grid-column: 1 / -1; /* Span across all columns */
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.telugu img{
+    width: 300px;
+    height: 350px;
+    
+    border:2px solid #050505;
+    
+
+border-radius: 10px;
+
+cursor: pointer;
+box-shadow: 0 10px 20px rgb(40,40,40);
+transition: 1s ease-out;
+opacity: 1;
+border-color: rgb(255, 0, 0);
+}
+
+.telugu img:hover{
+    transform: scale(0.9);
+}
+
+
+
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    padding-left: 50px;
+    padding: 50px;
+    background:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)) ;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 20s  linear infinite;
+}
+
+.marquee-item {
+    margin-right: 20px; /* Adjust the spacing between images */
+    width: 150px;
+    height: 250px;
+}
+
+.marquee-item img{
+    width: 150px;
+    height: 250px;
+}
+
+
+
+
+
+#searchInput {
+    padding: 10px;
+    width: 300px;
+    height: max-content;
+    align-items: center;
+    border-radius: 100px;
+    margin-top: -20px;
+   margin-left: 800px;
+   margin-bottom: -100px;
+}
+
+#searchResults {
+    margin-top: 10px;
+}
+
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    flex: 0 1 calc(30% - 20px); /* Adjust the width as needed */
+    margin: 10px;
+}
+
+.product a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product img {
+    width: 400px;
+    height: 300px;
+   
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: ease 0.8s;
+    border-color: red;
+
+}
+
+.product img:hover{
+    transform: scale(0.9);
+}
+.product div {
+    text-align: center;
+}
+
+.product h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: rgb(179, 179, 179);
+}
+
+.product p {
+    font-size: 14px;
+    color: #888;
+}
+
+
+
+
+
+
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px;
+
+}
+
+.col-image{
+    flex-basis: 30%;
+
+    width: 300px;
+    height: 200px;
+    border: 2px solid rgba(255, 252, 252, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.col-image p{
+font-size: larger;
+color: rgb(156, 150, 150);}
+
+.col-image h2{
+    color: rgb(156, 150, 150);
+ }
+
+
+
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    0%{
+        transform: translateX(100%);
+    }
+}
