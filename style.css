@@ -352,6 +352,9 @@ color: rgb(156, 150, 150);}
 }
 
 
+
+
+
 @media only screen and (max-width: 767px) {
 
   
@@ -415,4 +418,73 @@ color: rgb(156, 150, 150);}
     }
 
     
+  }
+
+
+  @media only screen and (max-width: 460px)
+  {
+    
+    .col-image{
+        flex-basis: 100%; /* Make each item take up the full width */
+        flex-grow: 1; /* Ensure each item fills the available space */
+        /* Set width to auto to allow flexibility */
+        margin-bottom: 40px; /* Adjust margin as needed */
+        height: fit-content;
+        width: max-content;
+        
+    }
+    
+    .row{
+        margin-top: -700px;
+        margin-left: 10px;
+    }
+    #searchInput{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; /* Center the content horizontally */
+    }
+    
+.telugu h1{
+    display: none;
+}
+    .telugu{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        
+
+        flex-basis: 100%; /* Make each item take up the full width */
+        flex-grow: 1; /* Ensure each item fills the available space */
+        width: 500px; /* Set width to auto to allow flexibility */
+        margin-bottom: 20px; /* Adjust margin as needed */
+        margin-left: -30px;
+    }
+
+    .telugu .img3,.img1, .img2{
+        margin-left: 100px;
+    }
+
+    .back-video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-position: center;
+        width: 100%;
+        opacity: 0.8;
+        transition: ease-in;
+        top:20%; /* Adjust the top position to move the background video upwards */
+        transform: translateY(-30%); /* Center the video vertically */
+    }
+
+    .content {
+        text-align: center;
+        z-index: 1;
+        margin-top: -50vh; /* Adjust the margin to align with the background video */
+    }
+
+    .overlay{
+        display: none;
+    }
+
   }
